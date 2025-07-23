@@ -52,6 +52,11 @@
             bindings = <&kp TILDE>;
             key-positions = <7 8>;
         };
+
+        atmark {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
