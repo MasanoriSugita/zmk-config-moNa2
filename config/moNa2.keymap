@@ -13,7 +13,21 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
@@ -49,7 +63,7 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                      &kp T                                      &kp Y             &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &trans         &kp SEMICOLON  &kp H             &kp J  &kp K      &kp L    &kp MINUS
+&kp A      &kp S         &kp D         &kp F                      &kp G        &trans         &kp COLON      &kp H             &kp J  &kp K      &kp L    &kp MINUS
 &kp Z      &kp X         &kp C         &kp V                      &kp B        &mt LCTRL B    &kp EQUAL      &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 5 SPACE  &lt 1 TAB      &kp BACKSPACE  &lt 5 LANGUAGE_1                             &kp ENTER
             >;
