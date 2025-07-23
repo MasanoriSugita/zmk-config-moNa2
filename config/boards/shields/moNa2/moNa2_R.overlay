@@ -60,10 +60,3 @@
 
     };
 };
-
-&trackball {
-    compatible = "pixart,pmw3610";
-    reg = <0>;
-    flip-x;
-    flip-y;
-};
