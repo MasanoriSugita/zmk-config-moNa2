@@ -105,9 +105,9 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE       &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans  &trans
+&kp ESCAPE       &trans  &trans  &trans  &trans                    &trans  &trans  &trans    &trans    &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
 &kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans    &trans  &trans                              &trans
             >;
 
