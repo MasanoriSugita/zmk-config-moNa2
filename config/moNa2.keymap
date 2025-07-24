@@ -57,6 +57,11 @@
             bindings = <&kp AT_SIGN>;
             key-positions = <19 20>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
