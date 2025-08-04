@@ -57,19 +57,19 @@
         compatible = "zmk,combos";
 
         minus {
-            bindings = <&kp MINUS>;
+            bindings = <&kp JP_MINUS>;
             key-positions = <7 6>;
             layers = <0>;
         };
 
         exclamation {
-            bindings = <&kp EXCLAMATION>;
+            bindings = <&kp JP_EXCL>;
             key-positions = <0 1>;
             layers = <0>;
         };
 
         question {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp JP_QMARK>;
             key-positions = <32 33>;
         };
 
@@ -79,27 +79,27 @@
         };
 
         period {
-            bindings = <&kp PERIOD>;
+            bindings = <&kp JP_DOT>;
             key-positions = <32 31>;
         };
 
         comma {
-            bindings = <&kp COMMA>;
+            bindings = <&kp JP_COMMA>;
             key-positions = <31 30>;
         };
 
         nyoro {
-            bindings = <&kp TILDE>;
+            bindings = <&kp JP_TILDE>;
             key-positions = <7 8>;
         };
 
         atmark {
-            bindings = <&kp AT_SIGN>;
+            bindings = <&kp JP_AT>;
             key-positions = <19 20>;
         };
 
         colon {
-            bindings = <&kp COLON>;
+            bindings = <&kp JP_COLON>;
             key-positions = <20 21>;
         };
     };
@@ -138,9 +138,9 @@
         default_layer {
             bindings = <
 &kp Q      &kp W         &kp E         &kp R                      &kp T                                      &kp Y             &kp U  &kp I     &kp O     &kp P
-&kp A      &kp S         &kp D         &kp F                      &kp G        &trans         &kp COLON      &kp H             &kp J  &kp K     &kp L     &kp ENTER
-&kp Z      &kp X         &kp C         &kp V                      &kp B        &mt LCTRL B    &kp EQUAL      &kp N             &kp M  &mkp MB1  &mkp MB2  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_SHIFT LANGUAGE_2  &lt 2 SPACE  &lt 1 TAB      &kp BACKSPACE  &lt 4 LANGUAGE_1                             &kp DELETE
+&kp A      &kp S         &kp D         &kp F                      &kp G        &trans         &kp TAB      &kp H             &kp J  &kp K     &kp L     &kp ENTER
+&kp Z      &kp X         &kp C         &kp V                      &kp B        &kp JP_COMMA    &kp JP_DOT      &kp N             &kp M  &mkp MB1  &mkp MB2  &kp JP_SLASH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 2 LANGUAGE_2  &lt 1 SPACE      &kp BACKSPACE  &lt 4 LANGUAGE_1                             &kp DELETE
             >;
 
             sensor-bindings =
@@ -150,8 +150,8 @@
 
         layer_1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp NUMBER_6  &kp N7    &kp N8          &kp N9            &kp N0
-&trans        &trans        &trans        &trans        &trans  &trans    &trans  &trans        &trans    &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp                     &kp NUMBER_6  &kp N7    &kp N8          &kp N9            &kp N0
+&trans        &trans        &trans        &trans        &trans  &trans    &trans  &trans        &trans    &kp UP_ARROW    &kp JP_LBKT     &kp JP_RBKT
 &trans        &trans        &trans        &trans        &trans  &trans    &trans  &trans        &kp LEFT  &kp DOWN_ARROW  &kp RIGHT         &kp SQT
 &kp ESCAPE    &trans        &trans        &trans        &trans  &trans    &trans  &trans                                                    &trans
             >;
@@ -161,8 +161,8 @@
 
         layer_2 {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
+&kp JP_MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                 &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp JP_SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))    &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                  &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
 &trans                      &trans           &trans           &trans           &trans        &trans                     &trans          &trans                                                                     &kp PIPE
             >;
